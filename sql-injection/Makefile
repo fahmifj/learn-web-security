@@ -1,6 +1,6 @@
 .PHONY: labs clean postgres adminer db
 
-labs: postgres adminer db
+labs: postgres adminer
 
 clean: 
 	docker stop adminer pgsql
@@ -10,7 +10,6 @@ postgres:
 
 adminer:
 	docker run -d --name adminer -p 4000:8080 --rm adminer
-
 db:
 	migrate -source file://00-sqli-lab/migrations \
 			-database postgres://postgres:secret@$(wslip)/postgres?sslmode=disable up

@@ -5,7 +5,7 @@
 - [ ] SQL injection 
     - [x] Login bypass
     - [x] UNION attacks
-    - [ ] Database Examination
+    - [x] Database examination
 - [ ] Authentication
 - [ ] OS command injection
 - [ ] Directory traversal
@@ -38,8 +38,8 @@ Create lab
 ```
 $ make labs
 ```
-Stop lab
 
+Stop lab
 ```
 $ make clean
 ```
