@@ -14,7 +14,9 @@
 - [ ] OS command injection
     - [x] Executing arbitrary commands
     - [ ] Blind OS command injection 
-- [ ] Directory traversal
+- [x] Directory traversal
+    - [x] Arbitrary file read
+    - [x] Exploiting file path traversal vulnerabilities
 - [ ] Business logic vulnerability
 - [ ] Information disclosure vulnerabilities
 - [ ] Access control vulnerabilities
