@@ -1,5 +1,3 @@
-Examining the database in SQL injection attacks
-
 # Examining the database in SQL injection attacks
 
 | Database type | Query |

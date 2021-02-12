@@ -12,6 +12,8 @@
     - [ ] Vulnerabilities in multi-factor authentication
     - [ ] Vulnerabilities in other authentication mechanism
 - [ ] OS command injection
+    - [x] Executing arbitrary commands
+    - [ ] Blind OS command injection 
 - [ ] Directory traversal
 - [ ] Business logic vulnerability
 - [ ] Information disclosure vulnerabilities

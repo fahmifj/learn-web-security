@@ -1,5 +1,3 @@
-Brute-force attacks
-
 # Brute-force attacks
 
 Payloads:
