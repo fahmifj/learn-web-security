@@ -1,6 +1,5 @@
 import requests
 
-
 url = "link"
 p_usernames = "wordlist"
 valid_usernames = []

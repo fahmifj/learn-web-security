@@ -11,9 +11,9 @@
     - [ ] Vulnerabilities in password-based login
     - [ ] Vulnerabilities in multi-factor authentication
     - [ ] Vulnerabilities in other authentication mechanism
-- [ ] OS command injection
+- [x] OS command injection
     - [x] Executing arbitrary commands
-    - [ ] Blind OS command injection 
+    - [x] Blind OS command injection 
 - [x] Directory traversal
     - [x] Arbitrary file read
     - [x] Exploiting file path traversal vulnerabilities

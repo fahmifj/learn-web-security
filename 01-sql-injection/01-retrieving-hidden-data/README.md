@@ -1,5 +1,4 @@
-# Lab SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
-
+# Lab #1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
 SQL query carried by application
 ```

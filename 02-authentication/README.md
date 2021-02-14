@@ -11,7 +11,7 @@ Three authentication factors:
 - Possession -> Something you **have** (Devices, token)
 - Inherence -> Something you **are** (Biometric)
 
-## Authentication vs Authorization
+## Authentication vs Authorizationu 
 
 Authentication only **verify** who you are, it doesn't care about what you can do after, what permission you have, it only **validates**.
 
@@ -57,3 +57,8 @@ Attackers may observe changes in the website before brute-forcing.
 
 For examples, when attackers enter one username and a random password, the application might reply that the given username is valid but the password is incorrect.
 Therefore, attackers can enumerate the valid usernames which then reduce the time cost required to do brute-force.
+
+# Labs
+
+Hands on lab: 
+- [Brute-force attacks](01-brute-force-attacks/README.md)

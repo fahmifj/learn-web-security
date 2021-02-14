@@ -1,6 +1,6 @@
 # Executing Arbitrary Command
 
-## Lab: OS command injection, simple case
+## Lab #1: OS command injection, simple case
 
 Sample request
 ```
@@ -53,6 +53,6 @@ Initial commands to obtain information.
 | ----------------------| ----------| -------|
 | Name of current user 	| whoami 	| whoami |
 | Operating system 	| uname -a 	| ver |
-Network configuration 	| ifconfig 	| ipconfig /all |
-Network connections | netstat -an 	| netstat -an
-Running processes 	| ps -ef 	| tasklist 
+|Network configuration 	| ifconfig 	| ipconfig /all |
+|Network connections | netstat -an 	| netstat -an |
+|Running processes 	| ps -ef 	| tasklist | 
