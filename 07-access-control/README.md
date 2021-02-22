@@ -14,12 +14,14 @@ Example of broken access control with hands on lab
 ### Vertical privilege escalation
 
 #### Unprotected functionality  
+All labs: [Unprotected functionality](01-unprotected-functionality/README.md)
 - [x] Unprotected admin functionality
 - [x] Unprotected admin functionality with unpredictable URL
 
 #### Parameter-based access control methods 
-- [ ] User role controlled by request parameter
-- [ ] User role can be modified in user profile
+All labs: [Parameter-based access control methods](01-unprotected-functionality/README.md)
+- [x] User role controlled by request parameter
+- [x] User role can be modified in user profile
 
 #### Broken access control resulting from platform misconfiguration
 - [ ] URL-based access control can be circumvented
