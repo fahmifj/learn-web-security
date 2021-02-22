@@ -5,8 +5,8 @@ From PortSwigger Web Security Academy:
 
 ## Examples of business logic vulnerabilities 
 
-Hands-on labs:
+Hands-on labs (apprentice only):
 - [x] Excessive trust in client-side controls
-- [ ] Failing to handle unconventional input
-- [ ] Making flawed assumptions about user behavior
-- [ ] Domain-specific flaws
+- [x] Failing to handle unconventional input  
+- [x] Making flawed assumptions about user behavior
+- [x] Domain-specific flaws

@@ -2,7 +2,7 @@
 
 Blind sql injection arises when an application vulnerable to SQL injection without returning the relevant result from SQL query.
 
-## Lab: Blind SQL injection with conditional responses
+## Lab #1: Blind SQL injection with conditional responses
 
 
 Example SQL query:
@@ -53,7 +53,7 @@ while True:
 ```
 Automated script in the scripts folder.
 
-## Lab: Blind SQL injection with conditional errors
+## Lab #2: Blind SQL injection with conditional errors
 
 Steps:
 1. Determine the database version
@@ -126,7 +126,7 @@ Paste wordlist to Burpsuite intruder, use P1 in payload 1, P2 in payload 2.
 
  https://gist.github.com/fahmifj/13d055117f729a233a8f4ccbefdb1680
 
-## Lab: Blind SQL injection with time delays
+## Lab #3: Blind SQL injection with time delays
 
 Assume the query is:
 

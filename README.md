@@ -2,14 +2,14 @@
 ## Learning Path
 
 ### Server-side
-- [ ] SQL injection 
+- [x] SQL injection 
     - [x] Login bypass
     - [x] UNION attacks
     - [x] Database examination
-    - [ ] Blind SQL injection 
+    - [x] Blind SQL injection 
 - [ ] Authentication
-    - [ ] Vulnerabilities in password-based login
-    - [ ] Vulnerabilities in multi-factor authentication
+    - [x] Vulnerabilities in password-based login
+    - [x] Vulnerabilities in multi-factor authentication
     - [ ] Vulnerabilities in other authentication mechanism
 - [x] OS command injection
     - [x] Executing arbitrary commands
@@ -17,8 +17,9 @@
 - [x] Directory traversal
     - [x] Arbitrary file read
     - [x] Exploiting file path traversal vulnerabilities
-- [ ] Business logic vulnerability
-- [ ] Information disclosure vulnerabilities
+- [x] Business logic vulnerability
+- [x] Information disclosure vulnerabilities
+    - [x] Exploit information disclosure vulnerabilities
 - [ ] Access control vulnerabilities
 - [ ] Server-side request forgery (SSRF)
 - [ ] XML external entity (XXE)
@@ -51,4 +52,7 @@ Stop lab
 $ make clean
 ```
 
-## Side Skills
+## Side Skills Learned
+
+- BurpSuite
+- Python Scripting

