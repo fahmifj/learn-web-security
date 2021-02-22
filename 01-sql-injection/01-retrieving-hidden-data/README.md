@@ -1,4 +1,4 @@
-# Lab #1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+## Lab #1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
 SQL query carried by application
 ```
@@ -25,3 +25,5 @@ SELECT * FROM products WHERE category = 'Accessories' OR 1=1--' AND released = 1
 ```
 
 The modified query will return all items where either the category is Gifts, or 1 is equal to 1. Since 1=1 is always true, the query will return all items. 
+
+Next: [SQL injection vulnerability allowing login bypass](../02-subverting-app-logic/README.md)

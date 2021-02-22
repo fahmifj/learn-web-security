@@ -1,3 +1,6 @@
+Table of contents
+---
+[toc]
 # Executing Arbitrary Command
 
 ## Lab #1: OS command injection, simple case

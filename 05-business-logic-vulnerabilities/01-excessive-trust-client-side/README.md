@@ -1,5 +1,6 @@
-Excessive trust in client-side controls
-
+Table of contents
+---
+[toc]
 # Excessive trust in client-side controls
 
 

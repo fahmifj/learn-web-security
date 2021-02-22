@@ -1,3 +1,6 @@
+Table of contents
+---
+[toc]
 # Making flawed assumptions about user behavior
 
 ## Lab #6: Inconsistent security controls

@@ -1,3 +1,6 @@
+Table of contents
+=
+[toc]
 # Blind SQL injection
 
 Blind sql injection arises when an application vulnerable to SQL injection without returning the relevant result from SQL query.
@@ -145,8 +148,6 @@ And here is the lab solution using string concatenation.
 ```
 '||pg_sleep(10) --
 ```
-
-Interesting..
 
 Reference
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/PostgreSQL%20Injection.md#postgresql-time-based

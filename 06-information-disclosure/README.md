@@ -29,4 +29,11 @@ Attacker may able to craft exploits according to the leaked technical informatio
 
 # Labs
 
-- [x] [How to find and exploit information disclosure vulnerabilities](01-exploit-information-disclosure-vulnerabilities.md)
+### How to find and exploit information disclosure vulnerabilities
+All labs: [How to find and exploit information disclosure vulnerabilities](01-exploit-information-disclosure-vulnerabilities.md) 
+
+- [x] Information disclosure in error messages
+- [x] Information disclosure on debug page
+- [x] Source code disclosure via backup files
+- [x] Authentication bypass via information disclosure
+- [x] Information disclosure in version control history

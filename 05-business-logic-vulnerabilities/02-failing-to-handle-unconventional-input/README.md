@@ -1,3 +1,6 @@
+Table of contents
+---
+[toc]
 # Failing to handle unconventional input
 
 Example case:

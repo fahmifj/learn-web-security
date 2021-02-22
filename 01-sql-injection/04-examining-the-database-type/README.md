@@ -1,6 +1,10 @@
+Table of contents
+---
+[toc]
 # Examining the database in SQL injection attacks
 
-Examining database
+Query to examining the database version
+
 | Database type | Query |
 | ------------- | ------| 
 |Microsoft 		|	SELECT @@version |
@@ -8,6 +12,7 @@ Examining database
 |PostgreSQL 	| 	SELECT version() |
 |MySQL 			|	SELECT @@version |
 
+# Labs
 ## Lab #1: SQL injection attack, querying the database type and version on Oracle
 
 Steps: 
@@ -31,7 +36,7 @@ UNION SELECT * FROM v$version where banner LIKE 'oracle%'--
 
 ```
 
-## SQL injection attack, querying the database type and version on MySQL and Microsoft
+## Lab #2: SQL injection attack, querying the database type and version on MySQL and Microsoft
 
 
 Steps

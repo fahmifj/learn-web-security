@@ -1,10 +1,13 @@
+Table of contents
+---
+[toc]
 # Blind OS command injection vulnerabilities
 
 Same like blind sql injection, blind OS command injection arises when an application is vulnerable to  OS command injection without returning the relevant result from the payload.
 
 But it's still exploitable and below is the following techniques to detect a blind OS command injection vulnerabilities:
 
-## Lab #2: Blind OS command injection with time delays
+## Lab #1: Blind OS command injection with time delays
 
 Sample request
 ```
@@ -51,7 +54,7 @@ Note:
 `A && B`, run B if a success  
 `A & B`, run A in background, run B in foreground
 
-## Lab #3: Blind OS command injection with output redirection
+## Lab #2: Blind OS command injection with output redirection
 
 Sample request:
 ```
@@ -90,7 +93,7 @@ We need BurpSuite to intercept the request as well as its response.
 
 ![2f66306da4784b1eb2c629ac1012d95c.png](./_resources/2f66306da4784b1eb2c629ac1012d95c.png)
 
-## Lab #4: Blind OS command injection with out-of-band interaction
+## Lab #3: Blind OS command injection with out-of-band interaction
 
 Note:
 If the system is asynchronous, it has no effect to the response timing. However, beside file write redirect, we could also detect the blind os command injection by redirecting the output to outer domain (out-of-band)

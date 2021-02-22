@@ -1,3 +1,6 @@
+Table of contents
+---
+[toc]
 # Domain-specific flaws
 
 ## Lab #12: Flawed enforcement of business rules

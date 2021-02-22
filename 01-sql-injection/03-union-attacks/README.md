@@ -1,3 +1,6 @@
+Table of contents
+---
+[toc]
 # SQL injection UNION attacks
 
 For a UNION query to work, two key requirements must be met:
@@ -78,7 +81,7 @@ category=Pets' UNION SELECT null,'inject',null --
 category=Pets' UNION SELECT null,'inject','inject' --
 ```
 
-# Lab #3: SQL injection UNION attack, retrieving data from other tables 
+## Lab #3: SQL injection UNION attack, retrieving data from other tables 
 
 Suppose that:
 - The original query returns two columns, both of which can hold string data.

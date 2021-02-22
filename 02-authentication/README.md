@@ -11,7 +11,7 @@ Three authentication factors:
 - Possession -> Something you **have** (Devices, token)
 - Inherence -> Something you **are** (Biometric)
 
-## Authentication vs Authorizationu 
+## Authentication vs Authorization
 
 Authentication only **verify** who you are, it doesn't care about what you can do after, what permission you have, it only **validates**.
 
@@ -32,33 +32,14 @@ This is reffered as Broken Authentication in OWASP TOP 10.
 - Sensitive data 
 - Possibly opening a broader attack surface (pivoting)
 
-# Vulnerabilities in password-based login
-
-## Brute-force attacks
-
-### Brute-forcing usernames
-Easy to guess by naming convention like,
-
-`firstname.lastname@corporation.com`
-`firstinitialname.lastname@corporation.com`
-
-Notes for auditing:
-
-- Is the website discloses a potential username publicly?
-- Is a profile accessible without logging in?
-- Contact email = potential IT support/sysadmin with high privileges.
-
-### Brute-forcing passwords
-Predictable password can improves success rate in brute force especially dictionary attack, therefore attackers may have an up to date wordlist.
-
-
-### Username enumeration
-Attackers may observe changes in the website before brute-forcing.
-
-For examples, when attackers enter one username and a random password, the application might reply that the given username is valid but the password is incorrect.
-Therefore, attackers can enumerate the valid usernames which then reduce the time cost required to do brute-force.
-
 # Labs
+## Vulnerabilities in password-based login
 
-Hands on lab: 
-- [Brute-force attacks](01-brute-force-attacks/README.md)
+### Brute-force attacks
+All labs: [Brute-force attacks](01-brute-force-attacks/README.md)  
+
+#### Username enumeration
+- [x] Username enumeration via different responses
+- [x] Username enumeration via subtly different responses
+- [x] Username enumeration via response timing
+

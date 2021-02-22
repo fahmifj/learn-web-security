@@ -1,10 +1,36 @@
+Table of contents
+---
+[toc]
 # Brute-force attacks
 
 Payloads:
 - [Username]( https://portswigger.net/web-security/authentication/auth-lab-usernames)
 - [Password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
-## Lab: Username enumeration via different responses
+
+## Brute force usernames
+Easy to guess by naming convention like,
+
+- `firstname.lastname@corporation.com`
+- `firstinitialname.lastname@corporation.com`
+
+Notes for auditing:
+
+- Is the website discloses a potential username publicly?
+- Is a profile accessible without logging in?
+- Contact email = potential IT support/sysadmin with high privileges.
+
+## Brute-forcing passwords
+Predictable password can improves success rate in brute force especially dictionary attack, therefore attackers may have an up to date wordlist.
+
+## Username enumeration
+Attackers may observe changes in the website before brute-forcing.
+
+For examples, when attackers enter one username and a random password, the application might reply that the given username is valid but the password is incorrect.
+Therefore, attackers can enumerate the valid usernames which then reduce the time cost required to do brute-force.
+
+# Labs
+## Lab #1: Username enumeration via different responses
 
 Steps:
 
@@ -40,7 +66,7 @@ for user in usernames:
 ```
 
 
-## Lab: Username enumeration via subtly different responses
+## Lab #2: Username enumeration via subtly different responses
 
 Steps:
 
@@ -56,7 +82,7 @@ Brute force passwords
 
 ![390b5a7e9cbb7a565aaae7122e86bccb.png](./_resources/c0fba60c2433429e83c141778d3486f2.png)
 
-## Lab: Username enumeration via response timing
+## Lab #3: Username enumeration via response timing
 
 > My scripting skill is not strong enough to complete this lab, so I followed the solution.
 
@@ -75,8 +101,10 @@ Valid username, invalid password = 4,900ms
 
 Brute-force with BurpSuite Intruder - Pitchfork attack
 
-> With X-Forwarded-For, the server will think our request was sent from proxy
-> Example our client ip: 1.2.3.4 and x-forwarded-for set to 127.0.0.1, then the server thinks the client ip, which is 1.2.3.4 was the proxy and believe the original request comming from 127.0.0.1, thus we can manipulate x-forwarded-for to bypass brute-force ip blocking protection
+> By adding `X-Forwarded-For` header, the server will think our request was sent from proxy
+>
+> Example our client ip: 1.2.3.4 and `X-Forwarded-For` set to 127.0.0.1, then the server thinks the client ip, which is 1.2.3.4 was the proxy and believe the original request comming from 127.0.0.1, thus we can manipulate `X-Forwarded-For` to bypass brute-force ip blocking protection
+
 ![c66d22730c305e0141388595d1e99468.png](./_resources/8bca45f6aaac4fd9b87963c7a8b0258b.png)
 
 Payload `X-Forwarded-For`

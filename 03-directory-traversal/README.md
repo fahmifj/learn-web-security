@@ -8,6 +8,11 @@ Directory traversal or sometimes called as File Path traversal is a vulnerabilit
 
 # Labs
 
-Hands on labs:
-- [Arbitrary file read](01-arbitrary-file-read/README.md)
-- [Exploiting file path traversal](02-exploiting-file-path-traversal/README.md)
+Example of directory traversal with hands-on lab:
+
+### Arbitrary file read
+All labs: [Arbitrary file read](01-arbitrary-file-read/README.md)
+- [x] File path traversal, simple case
+
+### Exploiting file path traversal vulnerabilities
+All labs: [Exploiting file path traversal](02-exploiting-file-path-traversal/README.md)

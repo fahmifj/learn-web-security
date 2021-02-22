@@ -2,25 +2,13 @@
 ## Learning Path
 
 ### Server-side
-- [x] SQL injection 
-    - [x] Login bypass
-    - [x] UNION attacks
-    - [x] Database examination
-    - [x] Blind SQL injection 
-- [ ] Authentication
-    - [x] Vulnerabilities in password-based login
-    - [x] Vulnerabilities in multi-factor authentication
-    - [ ] Vulnerabilities in other authentication mechanism
-- [x] OS command injection
-    - [x] Executing arbitrary commands
-    - [x] Blind OS command injection 
-- [x] Directory traversal
-    - [x] Arbitrary file read
-    - [x] Exploiting file path traversal vulnerabilities
-- [x] Business logic vulnerability
-- [x] Information disclosure vulnerabilities
-    - [x] Exploit information disclosure vulnerabilities
-- [ ] Access control vulnerabilities
+- [x] [SQL injection](01-sql-injection/README.md)
+- [x] [Authentication](02-authentication/README.md)
+- [x] [Directory traversal](03-directory-traversal/README.md)
+- [x] [OS command injection](04-command-injection/README.md)
+- [x] [Business logic vulnerability](05-business-logic-vulnerabilities/README.md)
+- [x] [Information disclosure vulnerabilities](06-information-disclosure/README.md)
+- [x] [Access control vulnerabilities](07-access-control/README.md)
 - [ ] Server-side request forgery (SSRF)
 - [ ] XML external entity (XXE)
 
