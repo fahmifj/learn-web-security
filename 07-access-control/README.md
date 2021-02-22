@@ -1,0 +1,43 @@
+# Access Control
+
+Access controls is application of constrains on what (or who) is allowed to perform attempted actions or access resources that they have requested.
+
+Access control is depent on `Authentication` and `Session Management`
+
+- **Authentication** validates the identity of users.
+- **Session Management** determine which http request are being made by the same users.
+
+# Labs
+
+Example of broken access control with hands on lab
+
+### Vertical privilege escalation
+
+#### Unprotected functionality  
+- [x] Unprotected admin functionality
+- [x] Unprotected admin functionality with unpredictable URL
+
+#### Parameter-based access control methods 
+- [ ] User role controlled by request parameter
+- [ ] User role can be modified in user profile
+
+#### Broken access control resulting from platform misconfiguration
+- [ ] URL-based access control can be circumvented
+- [ ] Method-based access control can be circumvented
+
+### Horizontal privilege escalation
+- [ ] User ID controlled by request parameter 
+- [ ] User ID controlled by request parameter, with unpredictable user IDs 
+- [ ] User ID controlled by request parameter with data leakage in redirect
+
+### Horizontal to vertical privilege escalation
+- [ ] User ID controlled by request parameter with password disclosure
+
+### Insecure direct object references (IDOR)
+- [ ] Insecure direct object references
+
+### Access control vulnerabilities in multi-step processes
+- [ ] Multi-step process with no access control on one step 
+
+### Referer-based access control
+- [ ] Referer-based access control
