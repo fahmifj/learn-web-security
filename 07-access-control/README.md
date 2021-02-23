@@ -19,7 +19,7 @@ All labs: [Unprotected functionality](01-unprotected-functionality/README.md)
 - [x] Unprotected admin functionality with unpredictable URL
 
 #### Parameter-based access control methods 
-All labs: [Parameter-based access control methods](01-unprotected-functionality/README.md)
+All labs: [Parameter-based access control methods](02-parameter-based-access-control-methods/README.md)
 - [x] User role controlled by request parameter
 - [x] User role can be modified in user profile
 
