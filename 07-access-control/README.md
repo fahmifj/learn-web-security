@@ -24,14 +24,15 @@ All labs: [Parameter-based access control methods](02-parameter-based-access-con
 - [x] User role can be modified in user profile
 
 #### Broken access control resulting from platform misconfiguration
-All labs: [Broken access control resulting from platform misconfiguration](07-access-control/README.md)
+All labs: [Broken access control resulting from platform misconfiguration](03-platform-misconfiguration/README.md)
 - [x] URL-based access control can be circumvented
 - [x] Method-based access control can be circumvented
 
 ### Horizontal privilege escalation
-- [ ] User ID controlled by request parameter 
-- [ ] User ID controlled by request parameter, with unpredictable user IDs 
-- [ ] User ID controlled by request parameter with data leakage in redirect
+All labs: [Horizontal privilege escalation](04-horizontal-privilege-escalation/README.md)
+- [x] User ID controlled by request parameter 
+- [x] User ID controlled by request parameter, with unpredictable user IDs 
+- [x] User ID controlled by request parameter with data leakage in redirect
 
 ### Horizontal to vertical privilege escalation
 - [ ] User ID controlled by request parameter with password disclosure
