@@ -1,7 +1,5 @@
 # Parameter-based access control methods
 
-Some applications determine the user's access rights or role at login, and then store this information in a user-controllable location, such as a hidden field, cookie, or preset query string parameter
-
 In some applications, user's access are stored in a user-controllable location:
 - URL Parameter
 - Cookie

@@ -24,8 +24,9 @@ All labs: [Parameter-based access control methods](02-parameter-based-access-con
 - [x] User role can be modified in user profile
 
 #### Broken access control resulting from platform misconfiguration
-- [ ] URL-based access control can be circumvented
-- [ ] Method-based access control can be circumvented
+All labs: [Broken access control resulting from platform misconfiguration](07-access-control/README.md)
+- [x] URL-based access control can be circumvented
+- [x] Method-based access control can be circumvented
 
 ### Horizontal privilege escalation
 - [ ] User ID controlled by request parameter 
