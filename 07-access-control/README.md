@@ -35,13 +35,13 @@ All labs: [Horizontal privilege escalation](04-horizontal-privilege-escalation/R
 - [x] User ID controlled by request parameter with data leakage in redirect
 
 ### Horizontal to vertical privilege escalation
-- [ ] User ID controlled by request parameter with password disclosure
+- [x] [User ID controlled by request parameter with password disclosure](05-horizontal-to-vertical-privilege-escalation/README.md)
 
 ### Insecure direct object references (IDOR)
-- [ ] Insecure direct object references
+- [x] [Insecure direct object references](06-insecure-direct-object-references/README.md)
 
 ### Access control vulnerabilities in multi-step processes
-- [ ] Multi-step process with no access control on one step 
+- [x] [Multi-step process with no access control on one step](08-referer-based-access-control/README.md)
 
 ### Referer-based access control
-- [ ] Referer-based access control
+- [x] [Referer-based access control](08-referer-based-access-control/README.md)

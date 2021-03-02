@@ -1,5 +1,3 @@
-04. Horizontal privilege escalation
-
 # Horizontal privilege escalation
 
 A horizontal privilege escalation occurs when a user is able to gain/access another user resources.
