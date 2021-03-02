@@ -26,6 +26,7 @@ There's three types of error in this application
 ![0b0cc6e6546a098161ab380641e82115.png](../_resources/012ff7f2b091469493104fcf6db8b0ed.png)
 
 	URL that returns missing parameter error
+
 	- http://stock.weliketoshop.net:8080/
 
 
@@ -37,20 +38,21 @@ There's three types of error in this application
 	- http://127.0.0.1/
 
 3. Internal server error
-
 ![9ba828dcb86dce135baa32fa34d8a284.png](../_resources/0b6faaf4ee7a406e9b78092f10d3c0e3.png)
 
-	URL that returns internal server error
+	URL that returns internal server error  
 	- http://[::1]/
 
-List of URLs that bypass the whitelist
+List of URLs that bypassed the whitelist
 
 - http://2130706433/
 - http://017700000001/
 - http://127.1/
 
 
-Adding `/admin` returns `"External stock check blocked for security reasons"`, means there are 2 step filter, the first one is the hostname and the second is directory any string contains `/admin`.
+Adding `/admin` returns `"External stock check blocked for security reasons"`, means there are 2 step filter.
+
+The first is hostname filter and the second one is any path contains `admin`.
 
 ![94ced21ba74b6f3b0edeaf3c990883d3.png](../_resources/fa8c2ad25dbc4875bbc6870f2812be6d.png)
 
@@ -77,11 +79,10 @@ Observing how the server handle parse the given URL
 
 ![bd7471d20cd1929d859787f58483d43e.png](../_resources/29a9dfad02d842298467d184db5e3efa.png)
 
-Inserting this url to `stockApi`
+Inserting this url to `stockApi` returns the same error
 ```
 http://stock.weliketoshop.net:8080@localhost/
 ```
-returns the same error
 
 ![2d26042af9eb98d9bbb591b817132b42.png](../_resources/465efc6debfb4394beab5fb37f7641f0.png)
 
@@ -92,7 +93,7 @@ This means the server url parser read `stock.weliketoshop.net:8080`(green line) 
 
 ![728c504989f2e9166e2481a6dad12820.png](../_resources/bb76805e03b94b8a8abe3d8a37bd1107.png)
 
-Example of how PHP function parse the following url (https://www.php.net/manual/en/function.parse-url.php):
+Example of how [PHP function](https://www.php.net/manual/en/function.parse-url.php) parse the following url :
 ```
 http://admin:pass123@google.com:9000/search?q=cat#home
 ```
@@ -116,17 +117,18 @@ The server parse `localhost` as the credential embedded with no password to `sto
 
 ![b8ca56c55a3f6f90a3440aa42c94ff64.png](../_resources/f691f15d666d4868bf921807b93fc064.png)
 
-Now we could add a URL fragment in front of localhost.
+Now we can try adding a URL fragment in front of localhost.
 
-From [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.5)
-> The fragment identifier component of a **URI allows indirect identification** of a **secondary resource by reference** to a primary resource and **additional identifying information**
-
+From [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.5):
+> *The fragment identifier component of a **URI allows indirect identification** of a **secondary resource by reference** to a primary resource and **additional identifying information*** 
+  
+Consider the following url:
 
 ```
 http://localhost#@stock.weliketoshop.net:8080/
 ```
 
-The server might parse it to
+The server then might parse it to:
 - scheme => `http`
 - host => `localhost`
 - fragment => `@stock.weliketoshop.net:8080`
@@ -135,10 +137,6 @@ At this time the `localhost` should be blacklisted by the app, but when it comes
 
 From [Wikipedia](https://en.wikipedia.org/wiki/URL):
 > A web browser will usually dereference a URL by performing an HTTP request to the specified host, by default on port number 80. URLs using the https scheme require that requests and responses be made over a secure connection to the website. 
-
-
-But then the frag
-- `localhost` one without credential embedded and `stock.weliketoshop.net` with empty credential embedded that act as additional/secondary resource to the `localhost`
 
 - http://localhost (primary resource)
 - stock.weliketoshop.net:8080/ (secondary resource)

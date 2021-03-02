@@ -6,13 +6,19 @@
 > 
 > To solve the lab, change the stock check URL to access the admin interface at http://localhost/admin and delete the user carlos. 
 
+Observing a product request.
 
 ![0333df3aed12212e69717f7d8ad593ad.png](../_resources/e6f84adb9fe542f182e064ff07b63812.png)
 
+Found an url endpoint to fetch the product stock.
+
 ![2318dac0a6acce719e038324ec229b99.png](../_resources/8baad8277a924c3fb2a7f48e36f7f188.png)
+
+SSRF to `http://localhost`.
 
 ![e99fd29ba3b72f598b25c1e21a0ae840.png](../_resources/f7cf7e305af64c19a2a2580924bb7443.png)
 
+SSRF to `http://localhost/admin`
 ![ce8de9dc83584ee7b7b55fc82502c6b8.png](../_resources/b43109132b8149339ed4df45d8e14263.png)
 
 I could make a ssrf to delete user carlos by inserting `http://localhost/admin/delete?username=carlos` as stockApi parameter value.
