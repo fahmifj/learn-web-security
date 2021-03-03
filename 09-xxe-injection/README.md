@@ -136,8 +136,8 @@ An external entity can use several scheme other than `http://` like `file://` an
 
 Example of XXE attacks with hands on lab:
 
-- [ ] Exploiting XXE using external entities to retrieve files
-- [ ] Exploiting XXE to perform SSRF attacks
+- [x] [Exploiting XXE using external entities to retrieve files](01-exploiting-xxe-to-retrieve-files/README.md)
+- [x] [Exploiting XXE to perform SSRF attacks](02-exploiting-xxe-to-perform-ssrf/README.md)
 
 ## Blind XXE vulnerabilities
 
@@ -148,6 +148,6 @@ Example of XXE attacks with hands on lab:
 
 
 ## Finding hidden attack surface for XXE injection
-
-- [ ] Exploiting XInclude to retrieve files
-- [ ] Exploiting XXE via image file upload
+All labs: [Finding hidden attack surface for XXE injection](04-hidden-attack-surface-xxe/README.md)
+- [x] Exploiting XInclude to retrieve files
+- [x] Exploiting XXE via image file upload
