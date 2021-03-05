@@ -1,5 +1,10 @@
 # Web Security Academy by PortSwigger
+
+This repository contains my notes (mostly in raw) about web application security and get familiar with BurpSuite. It also contains a few of exploit-like scripts and a small experiment lab for SQLi. It follows the [Web Security Academy](https://portswigger.net/web-security/learning-path) learning path.
+
 ## Learning Path
+
+Below are the topics I've completed
 
 ### Server-side
 - [x] [SQL injection](01-sql-injection/README.md)
@@ -9,8 +14,8 @@
 - [x] [Business logic vulnerability](05-business-logic-vulnerabilities/README.md)
 - [x] [Information disclosure vulnerabilities](06-information-disclosure/README.md)
 - [x] [Access control vulnerabilities](07-access-control/README.md)
-- [ ] Server-side request forgery (SSRF)
-- [ ] XML external entity (XXE)
+- [x] [Server-side request forgery (SSRF)](08-server-side-request-forgery/README.md)
+- [x] [XML external entity (XXE)](09-xxe-injection/README.md)
 
 ### Client-side
 - [ ] Cross-site scripting (XSS)
@@ -28,7 +33,16 @@
 - [ ] HTTP request smuggling
 - [ ] OAuth authentication
 
-## SQL injection test labs
+## Side Skills Learned
+
+- BurpSuite
+- Python Scripting
+
+## Labs
+
+Currently it only has one lab for sql injection.
+
+### SQL injection test labs
 
 Create lab
 ```
@@ -39,8 +53,3 @@ Stop lab
 ```
 $ make clean
 ```
-
-## Side Skills Learned
-
-- BurpSuite
-- Python Scripting
