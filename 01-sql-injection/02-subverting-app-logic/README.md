@@ -1,6 +1,8 @@
-## Lab #1: SQL injection vulnerability allowing login bypass
+## Lab #2: SQL injection vulnerability allowing login bypass
 
->Perform an SQL injection attack that logs in to the application as the administrator user. 
+> This lab contains an SQL injection vulnerability in the login function.
+>
+> To solve the lab, perform an SQL injection attack that logs in to the application as the administrator user. 
 
 Parameter:
 ```
