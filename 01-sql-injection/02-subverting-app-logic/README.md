@@ -18,4 +18,4 @@ csrf=XXXXXXXX&username=administrator'OR+1=1--&password=1
 SELECT username, password WHERE username='administrator' OR 1=1 -- 'AND password='fahmi'
 ```
 
-Next: [UNION attack](03-union-attacks/README.md)
+Next: [UNION attack](../03-union-attacks/README.md)
